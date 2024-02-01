@@ -24,6 +24,10 @@ body header {
   color: rgb(255, 255, 255);
   font-family: "Sixtyfour", sans-serif;
 }
+body header #search {
+  padding: 0.8rem;
+  border-radius: 20px;
+}
 body main {
   margin-top: 5rem;
   display: flex;
@@ -31,6 +35,9 @@ body main {
   align-items: center;
   font-family: "Oswald", sans-serif;
   flex-wrap: wrap;
+}
+body main h2 {
+  font-size: 1.5em;
 }
 body main .movieCard {
   width: 300px;

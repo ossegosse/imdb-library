@@ -13,6 +13,10 @@ body {
         align-items: center;
         color: $font-color-header;
         font-family: $header-font;
+        #search {
+            padding: 0.8rem;
+            border-radius: 20px;
+        }
     }
     main {
         margin-top: 5rem;
@@ -21,6 +25,9 @@ body {
         align-items: center;
         font-family: $content-font;
         flex-wrap: wrap;
+        h2 {
+            font-size: 1.5em;
+        }
         .movieCard {
             width: 300px;
             margin: 1rem;

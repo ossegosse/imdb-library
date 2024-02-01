@@ -2,8 +2,8 @@
 // base-url: https://api.themoviedb.org/3/movie/550?api_key=9d3ba34d1cce30fc4000f01b0f6186cf
 // API Key: 9d3ba34d1cce30fc4000f01b0f6186cf
 
-import config from "./config.json";
-console.log(config.api_key);
+/* import config from "./config.json";
+console.log(config.api_key); */
 
 fetch('https://api.themoviedb.org/3/movie/550?api_key=9d3ba34d1cce30fc4000f01b0f6186cf')
   .then(response => {

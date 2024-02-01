@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <title>Notes</title>
+    <title>IMDB Library</title>
   </head>
   <body>
     <header id="header">
-      <h1>IMDB-Library</h1>
+      <h1>IMDB Library</h1>
       <form action="/search" method="get">
         <input
           type="text"
@@ -16,12 +16,12 @@
           name="q"
           placeholder="Search for movies..."
         />
-        <button type="submit">Search</button>
       </form>
     </header>
 
     <main>
-      <h2>Showing popular movies from selected genres</h2>
+        <h2>Showing popular movies from selected genres</h2>
+    
       <div class="movieCard">
         <img
           src="/scss/img/adam-neumann-vzEeVwUgTmI-unsplash.jpg"
@@ -33,7 +33,26 @@
           <span class="rating">9.8</span>
         </div>
         <div class="overview">
-            <h3>Overview</h3>
+          <h3>Overview</h3>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil animi
+          laudantium, cumque adipisci deleniti sit provident a reprehenderit
+          facilis, tenetur eaque commodi reiciendis explicabo corporis at cum,
+          molestiae quis! Quo? 
+        </div>
+      </div>
+
+      <div class="movieCard">
+        <img
+          src="/scss/img/adam-neumann-vzEeVwUgTmI-unsplash.jpg"
+          alt=""
+          class="poster"
+        />
+        <div class="movie-info">
+          <h3>Movie Title</h3>
+          <span class="rating">9.8</span>
+        </div>
+        <div class="overview">
+          <h3>Overview</h3>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil animi
           laudantium, cumque adipisci deleniti sit provident a reprehenderit
           facilis, tenetur eaque commodi reiciendis explicabo corporis at cum,
@@ -52,32 +71,14 @@
           <span class="rating">9.8</span>
         </div>
         <div class="overview">
-            <h3>Overview</h3>
+          <h3>Overview</h3>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil animi
           laudantium, cumque adipisci deleniti sit provident a reprehenderit
           facilis, tenetur eaque commodi reiciendis explicabo corporis at cum,
           molestiae quis! Quo?
         </div>
       </div>
-
-      <div class="movieCard">
-        <img
-          src="/scss/img/adam-neumann-vzEeVwUgTmI-unsplash.jpg"
-          alt=""
-          class="poster"
-        />
-        <div class="movie-info">
-          <h3>Movie Title</h3>
-          <span class="rating">9.8</span>
-        </div>
-        <div class="overview">
-            <h3>Overview</h3>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil animi
-          laudantium, cumque adipisci deleniti sit provident a reprehenderit
-          facilis, tenetur eaque commodi reiciendis explicabo corporis at cum,
-          molestiae quis! Quo?
-        </div>
-      </div>
+    
     </main>
     <script src="./script.js"></script>
   </body>
