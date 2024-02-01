@@ -1,5 +1,6 @@
-$primary-header-color: rgb(68, 55, 55);
-$primary-content-color: rgb(255, 255, 255);
+$primary-header-color: linear-gradient(to right, #3c3b3f, #605c3c);
+$primary-content-color: linear-gradient(to right, #ffefba, #ffffff);
 
-$font-color-yellow: rgb(201, 201, 47);
-$font-color-black: black;
+$font-color-header: rgb(255, 255, 255);
+$font-color-content: black;
+

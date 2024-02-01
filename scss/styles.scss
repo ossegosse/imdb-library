@@ -4,25 +4,64 @@
 @import "./abstracts/fonts";
 
 body {
-    background-color: $primary-content-color;
+    background: $primary-content-color;
     header {
-        background-color: $primary-header-color;
-        height: 5rem;
+        background: $primary-header-color;
+        padding: 2rem;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        color: $font-color-yellow;
+        color: $font-color-header;
+        font-family: $header-font;
     }
     main {
-        height: 60vh;
+        margin-top: 5rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        section {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
+        font-family: $content-font;
+        flex-wrap: wrap;
+        .movieCard {
+            width: 300px;
+            margin: 1rem;
+            border-radius: 5px;
+            box-shadow: 0.2px 4px 5px black;
+            position: relative;
+            overflow: hidden;
+            background: white;
+            .poster {
+                width: 100%;
+            }
+            .movie-info {
+                display: flex;
+                margin: 0;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem;
+                .rating {
+                    background: black;
+                    color: white;
+                    padding: 0.5rem;
+                    border-radius: 5px;
+                    font-weight: bold;
+                }
+            }
+            .overview {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: white;
+                padding: 1rem;
+                max-height: 100%;
+                transform: translateY(101%);
+                transition: transform 0.3s ease-in;
+                
+            }
         }
     }
 }
 
+.movieCard:hover .overview {
+    transform: translateY(0);
+}

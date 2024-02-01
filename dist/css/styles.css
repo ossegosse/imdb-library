@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 *,
 * ::before,
 * ::after {
@@ -11,26 +13,65 @@ body {
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(to right, #ffefba, #ffffff);
 }
 body header {
-  background-color: rgb(68, 55, 55);
-  height: 5rem;
+  background: linear-gradient(to right, #3c3b3f, #605c3c);
+  padding: 2rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  color: rgb(201, 201, 47);
+  color: rgb(255, 255, 255);
+  font-family: "Sixtyfour", sans-serif;
 }
 body main {
-  height: 60vh;
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Oswald", sans-serif;
+  flex-wrap: wrap;
 }
-body main section {
+body main .movieCard {
+  width: 300px;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0.2px 4px 5px black;
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+body main .movieCard .poster {
+  width: 100%;
+}
+body main .movieCard .movie-info {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  margin: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+body main .movieCard .movie-info .rating {
+  background: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+body main .movieCard .overview {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  padding: 1rem;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+.movieCard:hover .overview {
+  transform: translateY(0);
 }
 
 /*# sourceMappingURL=styles.css.map */
