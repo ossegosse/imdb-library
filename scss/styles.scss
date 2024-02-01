@@ -1,0 +1,10 @@
+@import "./base/base";
+@import "./components/buttons";
+@import "./abstracts/colors";
+@import "./abstracts/fonts";
+
+body {
+    background: blue;
+    display: flex;
+    
+}
