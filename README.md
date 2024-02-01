@@ -1,5 +1,8 @@
 # notes-app
 
-// - skapa mappstruktur: TS, SCSS
+// Att göra 
+    - skapa mappstruktur: TS, SCSS
     - hämta api
-    - skapa figmaskiss(?) för designen
+    - skapa figmaskiss för designen
+    - 
+    

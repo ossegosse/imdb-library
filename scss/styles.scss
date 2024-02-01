@@ -4,7 +4,25 @@
 @import "./abstracts/fonts";
 
 body {
-    background: blue;
-    display: flex;
-    
+    background-color: $primary-content-color;
+    header {
+        background-color: $primary-header-color;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $font-color-yellow;
+    }
+    main {
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+    }
 }
+
