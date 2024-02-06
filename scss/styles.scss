@@ -15,23 +15,23 @@ body {
         font-family: $header-font;
         #search {
             padding: 0.8rem;
-            border-radius: 20px;
+            border-radius: 1.25rem;
         }
     }
-    main {
+
+    
+    #container {
         margin-top: 5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: $content-font;
         flex-wrap: wrap;
-        h2 {
-            font-size: 1.5em;
-        }
         .movieCard {
-            width: 300px;
+            width: 18.75rem;
+            height: 33rem;
             margin: 1rem;
-            border-radius: 5px;
+            border-radius: 0.313rem;
             box-shadow: 0.2px 4px 5px black;
             position: relative;
             overflow: hidden;
@@ -49,7 +49,7 @@ body {
                     background: black;
                     color: white;
                     padding: 0.5rem;
-                    border-radius: 5px;
+                    border-radius: 0.313rem;
                     font-weight: bold;
                 }
             }
@@ -63,12 +63,11 @@ body {
                 max-height: 100%;
                 transform: translateY(101%);
                 transition: transform 0.3s ease-in;
-                
             }
         }
     }
 }
 
-.movieCard:hover .overview {
+#container .movieCard:hover .overview {
     transform: translateY(0);
 }
