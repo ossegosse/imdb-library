@@ -9,33 +9,39 @@
   <body>
     <header id="header">
       <h1>IMDB Library</h1>
-      <form action="/search" method="get">
+      <form id="form">
         <input
           type="text"
-          id="search"
-          name="q"
+          id="searchBar"
           placeholder="Search for movies..."
         />
       </form>
     </header>
 
-    <main id="main">
-        <div id="container">
-      <div class="movieCard">
-        <img
-          src="/scss/img/adam-neumann-vzEeVwUgTmI-unsplash.jpg"
-          alt=""
-          class="poster"
-        />
-        <div class="movie-info">
-          <h3>Movie Title</h3>
-          <span class="rating">9.8</span>
-        </div>
-        <div class="overview">
-          <h3>Overview</h3>
+    <main>
+      <div class="descrText">
+        <h2>
+          Displaying movies from IMDB. <br> IMDb is the world's most popular and
+          authoritative source for movie, TV and celebrity content. Find ratings
+          and reviews for the newest movie and TV shows.
+        </h2>
+      </div>
+      <div id="container">
+        <div class="movieCard">
+          <img
+            src="/scss/img/adam-neumann-vzEeVwUgTmI-unsplash.jpg"
+            alt=""
+            class="poster"
+          />
+          <div class="movie-info">
+            <h3>Movie Title</h3>
+            <span class="rating">9.8</span>
+          </div>
+          <div class="overview">
+            <h3>Overview</h3>
+          </div>
         </div>
       </div>
-    </div>
     </main>
     <script src="./script.js"></script>
   </body>

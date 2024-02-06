@@ -20,17 +20,38 @@ body header {
   background: linear-gradient(to right, #3c3b3f, #605c3c);
   padding: 2rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   color: rgb(255, 255, 255);
   font-family: "Playfair Display", serif;
+  flex-wrap: wrap;
 }
-body header #search {
+body header h1 {
+  font-size: 3em;
+}
+body header #searchBar {
   padding: 0.8rem;
   border-radius: 1.25rem;
+  width: 18rem;
+}
+body main {
+  background: linear-gradient(to right, #ffefba, #ffffff);
+}
+body main .descrText {
+  height: 10rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  text-align: center;
+}
+body main .descrText h2 {
+  font-size: 1.2em;
 }
 body #container {
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
+  padding-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;

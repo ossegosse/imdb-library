@@ -4,8 +4,12 @@ const baseUrl = "https://api.themoviedb.org/3";
 const apiTrending = "api.themoviedb.org/3/trending/movie/day?api_key=9d3ba34d1cce30fc4000f01b0f6186cf"
 const apiUrl = baseUrl+"/trending/movie/day?"+api_key;
 const imgUrl = "https://image.tmdb.org/t/p/w500"
+const searchUrl = baseUrl+"/search/movie?"+api_key;
 
+const form = document.getElementById("form")
+const searchBar = document.getElementById("searchBar") as HTMLInputElement
 const container = document.getElementById("container")
+
 
 getMovies(apiUrl)
 
@@ -48,6 +52,13 @@ function renderMovies (data: any[]): void {
   })
 }
 
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const searchTerm = searchBar.value;
+    if (searchTerm) {
+      getMovies(searchUrl+"&query="+searchTerm)
+    }
+})
 
 
 /* interface Movie {

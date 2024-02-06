@@ -9,19 +9,40 @@ body {
         background: $primary-header-color;
         padding: 2rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         color: $font-color-header;
         font-family: $header-font;
-        #search {
+        flex-wrap: wrap;
+        h1 {
+            font-size: 3em;
+        }
+        #searchBar {
             padding: 0.8rem;
             border-radius: 1.25rem;
+            width: 18rem;
         }
     }
 
+    main {
+        background: $primary-content-color;
+    .descrText {
+        height: 10rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        text-align: center;
+        h2 {
+            font-size: 1.2em;
+        }
+    }
+}
     
     #container {
-        margin-top: 5rem;
+        /* margin-top: 5rem; */
+        padding-bottom: 3rem;
         display: flex;
         justify-content: center;
         align-items: center;
