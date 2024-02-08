@@ -32,6 +32,7 @@ function renderMovies (data: any[]): void {
 
   data.forEach(movie => {
     const {title, poster_path, vote_average, overview} = movie
+    const formattedVoteAverage = parseFloat(vote_average).toFixed(1)
     const movieEl = document.createElement("div")
     movieEl.classList.add("movieCard")
     movieEl.innerHTML = `
@@ -41,7 +42,7 @@ function renderMovies (data: any[]): void {
   />
   <div class="movie-info">
     <h3>${title}</h3>
-    <span class="rating">${vote_average}</span>
+    <span class="rating">${formattedVoteAverage}</span>
   </div>
   <div class="overview">
     <h3>Overview</h3>
@@ -52,11 +53,16 @@ function renderMovies (data: any[]): void {
   })
 }
 
+
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const searchTerm = searchBar.value;
     if (searchTerm) {
       getMovies(searchUrl+"&query="+searchTerm)
+    }
+    else {
+      getMovies(apiUrl)
     }
 })
 

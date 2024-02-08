@@ -20,7 +20,7 @@ body header {
   background: linear-gradient(to right, #3c3b3f, #605c3c);
   padding: 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   color: rgb(255, 255, 255);
   font-family: "Playfair Display", serif;
@@ -29,28 +29,30 @@ body header {
 body header h1 {
   font-size: 3em;
 }
-body header #searchBar {
+body main .descrText {
+  height: 10rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+body main .descrText h2 {
+  font-size: 1.2em;
+  max-width: 50rem;
+  background-color: linear-gradient(to right, #3c3b3f, #605c3c);
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 10px;
+}
+body main .descrText #searchBar {
   padding: 0.8rem;
   border-radius: 1.25rem;
   width: 18rem;
 }
-body main {
-  background: linear-gradient(to right, #ffefba, #ffffff);
-}
-body main .descrText {
-  height: 10rem;
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  text-align: center;
-}
-body main .descrText h2 {
-  font-size: 1.2em;
-}
 body #container {
-  /* margin-top: 5rem; */
+  margin-top: 2rem;
   padding-bottom: 3rem;
   display: flex;
   justify-content: center;
