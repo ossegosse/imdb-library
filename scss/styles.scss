@@ -7,15 +7,22 @@ body {
     background: $primary-content-color;
     header {
         background: $primary-header-color;
-        padding: 2rem;
+        padding: 1rem;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         color: $font-color-header;
         font-family: $header-font;
         flex-wrap: wrap;
         h1 {
-            font-size: 3em;
+            font-size: 2em;
+            margin-left: 1rem;
+        }
+        #searchBar {
+            padding: 0.8rem;
+            border-radius: 1.25rem;
+            width: 18rem;
+            margin-right: 1rem;
         }
         
     }
@@ -37,11 +44,7 @@ body {
             padding: 1rem 2rem 1rem 2rem;
             border-radius: 10px;
         }
-        #searchBar {
-            padding: 0.8rem;
-            border-radius: 1.25rem;
-            width: 18rem;
-        }
+        
     }
 }
     
