@@ -14,10 +14,10 @@ body {
 }
 
 body {
-  background: linear-gradient(to right, #ffefba, #ffffff);
+  background: #B6B7E2;
 }
 body header {
-  background: linear-gradient(to right, #3c3b3f, #605c3c);
+  background: #11122C;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -35,23 +35,6 @@ body header #searchBar {
   border-radius: 1.25rem;
   width: 18rem;
   margin-right: 1rem;
-}
-body main .descrText {
-  height: 10rem;
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 2rem;
-}
-body main .descrText h2 {
-  font-size: 1.2em;
-  max-width: 50rem;
-  background-color: linear-gradient(to right, #3c3b3f, #605c3c);
-  padding: 1rem 2rem 1rem 2rem;
-  border-radius: 10px;
 }
 body #container {
   margin-top: 2rem;

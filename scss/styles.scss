@@ -4,9 +4,9 @@
 @import "./abstracts/fonts";
 
 body {
-    background: $primary-content-color;
+    background: $alt-content-color;
     header {
-        background: $primary-header-color;
+        background: $alt-header-color;
         padding: 1rem;
         display: flex;
         justify-content: space-between;
@@ -26,27 +26,6 @@ body {
         }
         
     }
-
-    main {
-    .descrText {
-        height: 10rem;
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 2rem;
-        h2 {
-            font-size: 1.2em;
-            max-width: 50rem;
-            background-color: $primary-header-color;
-            padding: 1rem 2rem 1rem 2rem;
-            border-radius: 10px;
-        }
-        
-    }
-}
     
     #container {
         margin-top: 2rem;
